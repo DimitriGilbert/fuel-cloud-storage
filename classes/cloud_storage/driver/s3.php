@@ -326,6 +326,7 @@ class Cloud_Storage_Driver_S3 extends Cloud_Storage_Driver
         $this->s3 = Aws::factory(array(
                     'key'    => $this->get_config('access_key'),
                     'secret' => $this->get_config('access_secret'),
+                    'region' => $this->get_config('region'),
                 ))->get('s3');
     }
     
