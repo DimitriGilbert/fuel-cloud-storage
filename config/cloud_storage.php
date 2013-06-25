@@ -29,7 +29,12 @@ return array(
         /**
          * container name where files will be uploaded to
          */
-        'container'    => 'my_s3_bucket_name',
+        'container'    => 'my_s3_bucket_name',,
+        
+        /**
+         * container region where files will be uploaded to
+         */
+        'region'    => 'my_s3_region_name',
 	),
     
 	/**
